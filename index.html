@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VOXTARA — Every Voice. Every Idea. One Community.">
+  <title>VOXTARA — Every Voice. Every Idea.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> A global community starts with one voice.</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="VOXTARA home">
+      <span class="brand-mark">V<span>✳</span></span>
+      <span class="brand-name">VOX<span>TARA</span><small>EVERY VOICE. EVERY IDEA.</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#community">Community</a>
+      <a href="#about">About</a>
+      <a href="#guidelines">Guidelines</a>
+    </nav>
+    <a class="header-cta" href="#start">Start a discussion <span>↗</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR VOICE BELONGS HERE</div>
+        <h1>Big ideas begin<br>with <span class="gradient-text">one voice.</span></h1>
+        <p class="hero-description">A place to ask boldly, share honestly, and explore ideas together. Different perspectives. Real conversations. One community.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#start">Join the conversation <span>→</span></a>
+          <a class="text-link" href="#community">Explore discussions <span>↓</span></a>
+        </div>
+        <div class="hero-proof"><div class="avatar-stack"><span>V</span><span>✦</span><span>◎</span></div><span><strong>Every perspective matters.</strong><br>Come as you are. Use a nickname.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract VOXTARA community artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-core"><span>V</span><small>VOX<br>TARA</small></div>
+        <div class="float-card card-top"><span class="mini-icon gold">✦</span><span><b>Share an idea</b><small>Start something meaningful</small></span></div>
+        <div class="float-card card-bottom"><span class="mini-icon blue">↗</span><span><b>See a new perspective</b><small>Better conversations, together</small></span></div>
+        <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section class="topic-strip" aria-label="Discussion topics">
+      <div><span class="strip-label">FIND YOUR CONVERSATION</span><span class="strip-divider"></span></div>
+      <button class="topic-chip selected" data-topic="All">✳ All topics</button>
+      <button class="topic-chip" data-topic="Business">↗ Business</button>
+      <button class="topic-chip" data-topic="Relationships">♡ Relationships</button>
+      <button class="topic-chip" data-topic="Faith">✦ Faith & life</button>
+      <button class="topic-chip" data-topic="Entertainment">▶ Entertainment</button>
+      <button class="topic-chip" data-topic="Everyday life">☼ Everyday life</button>
+    </section>
+
+    <section class="community-section" id="community">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> THE COMMUNITY</div><h2>Ideas in the open.</h2><p>Read, respond, and add your point of view.</p></div>
+        <div class="feed-controls"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search discussions…" aria-label="Search discussions"></label><select id="sortSelect" aria-label="Sort discussions"><option value="latest">Latest first</option><option value="popular">Most liked</option></select></div>
+      </div>
+      <div class="community-layout">
+        <div class="feed-column">
+          <div class="feed-status"><span><i class="live-dot"></i> COMMUNITY FEED</span><span id="postCount">3 discussions</span></div>
+          <div id="postFeed" class="post-feed" aria-live="polite"></div>
+          <div id="emptyState" class="empty-state hidden"><div>✳</div><h3>No discussions found</h3><p>Try another search or be the first to start this conversation.</p><button class="button button-outline" id="clearFilters">Clear filters</button></div>
+        </div>
+        <aside class="sidebar">
+          <div class="side-card start-card" id="start">
+            <div class="side-card-top"><span class="side-icon">✦</span><span class="tiny-label">YOUR TURN</span></div>
+            <h3>Have something<br>on your mind?</h3>
+            <p>Your idea could be the start of a great conversation.</p>
+            <button class="button button-gold full-width" id="openComposer">＋ Start a discussion</button>
+            <div class="privacy-note">↳ No account needed. Choose a nickname.</div>
+          </div>
+          <div class="side-card community-values" id="about">
+            <div class="tiny-label">THE VOXTARA WAY</div>
+            <h3>Different voices.<br>Shared respect.</h3>
+            <ul><li><span>01</span> Be curious, not cruel.</li><li><span>02</span> Disagree with ideas, not people.</li><li><span>03</span> Keep personal information private.</li></ul>
+            <a href="#guidelines" class="side-link">Read our community guidelines <span>→</span></a>
+          </div>
+          <div class="quote-card"><span class="quote-mark">“</span><p>A good conversation can open a door you didn't know existed.</p><span class="quote-caption">THE VOXTARA SPIRIT</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bottom-cta" id="guidelines">
+      <div class="bottom-cta-symbol">V✳</div><div><div class="eyebrow">MAKE ROOM FOR EVERY VOICE</div><h2>Bring your perspective.<br>Leave room for another.</h2></div>
+      <a class="button button-light" href="#start">Start talking <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#">VOXTARA<span>✳</span></a><span>Every Voice. Every Idea. One Community.</span><span>Built for better conversations <b>✦</b></span></footer>
+
+  <dialog id="composerDialog" class="composer-dialog">
+    <form id="composerForm" method="dialog">
+      <div class="dialog-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR VOICE, YOUR SPACE</div><h2>Start a discussion</h2></div><button type="button" class="close-dialog" id="closeComposer" aria-label="Close">×</button></div>
+      <label class="field-label" for="nickname">Your nickname</label><input id="nickname" name="nickname" maxlength="28" placeholder="e.g. CuriousMind" required>
+      <label class="field-label" for="postTopic">Choose a topic</label><select id="postTopic" name="topic"><option>Business</option><option>Relationships</option><option>Faith</option><option>Entertainment</option><option>Everyday life</option><option>Other</option></select>
+      <label class="field-label" for="postTitle">Give your discussion a title</label><input id="postTitle" name="title" maxlength="100" placeholder="What would you like to discuss?" required>
+      <label class="field-label" for="postBody">Your message</label><textarea id="postBody" name="body" maxlength="1500" rows="5" placeholder="Share your idea, question, or point of view…" required></textarea>
+      <p class="form-hint">Be respectful. Don't share passwords, private contact details, or other people's personal information.</p>
+      <p id="formError" class="form-error" role="alert"></p>
+      <button class="button button-gold full-width" type="submit">Publish discussion <span>→</span></button>
+      <p class="demo-note">Starter preview: posts are saved in this browser until the shared database is connected.</p>
+    </form>
+  </dialog>
+  <dialog id="commentsDialog" class="composer-dialog comments-dialog">
+    <div class="dialog-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> JOIN IN</div><h2 id="commentsTitle">Conversation</h2></div><button type="button" class="close-dialog" id="closeComments" aria-label="Close">×</button></div>
+    <div id="commentsList" class="comments-list"></div>
+    <form id="commentForm">
+      <label class="field-label" for="commentNickname">Your nickname</label><input id="commentNickname" maxlength="28" placeholder="e.g. CuriousMind" required>
+      <label class="field-label" for="commentBody">Your reply</label><textarea id="commentBody" maxlength="800" rows="3" placeholder="Add something constructive…" required></textarea>
+      <button class="button button-gold full-width" type="submit">Post reply <span>→</span></button>
+      <p class="demo-note">Replies are currently saved in this browser preview.</p>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
